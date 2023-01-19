@@ -1,6 +1,42 @@
 {
-  "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
-  }
+    "target": "ESNext",
+    "module": "commonjs",
+    "jsx": "react-native",
+    "lib": [
+      "dom",
+      "es2015",
+      "es2016",
+      "ES2017",
+      "ES2018"
+    ],
+    "declaration": true,
+    "sourceMap": false,
+    "outDir": "./apps",
+    "allowJs": true,
+    "checkJs": true,
+    "removeComments": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": false,
+    "skipLibCheck": false,
+    "alwaysStrict": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "UI/**/*.tsx",
+    "UI/**/*.ts",
+    "index.tsx"
+  ]
 }

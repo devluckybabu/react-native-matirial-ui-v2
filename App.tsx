@@ -1,20 +1,32 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import Container from './Container';
+import MaterialUI from './UI';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const App = () => (
+  <MaterialUI
+    stack={{
+      screens: [{
+        name: 'home',
+        screen: Container
+      }, {
+        name: 'About',
+        screen: Container
+      }]
+    }}
+    bottomTabs={{
+      options: { headerShown: false },
+      name: 'Hello World',
+      screens: [{
+        name: 'Home',
+        screen: Container
+      }, {
+        name: 'hello',
+        screen: Container
+      }, {
+        name: 'World',
+        screen: Container
+      }]
+    }}
+  />
+)
+export default App;
