@@ -1,3 +1,3 @@
-import MaterialUI from "./UI";
+import MaterialUI from "./apps";
 
 export default MaterialUI;

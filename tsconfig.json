@@ -36,7 +36,6 @@
   ],
   "include": [
     "UI/**/*.tsx",
-    "UI/**/*.ts",
-    "index.tsx"
+    "UI/**/*.ts"
   ]
 }
